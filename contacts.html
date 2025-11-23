@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Контакты — Luna Jewelry</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Forum&family=Inter:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="container header-inner">
+        <a href="index.html" class="logo">Luna Jewelry</a>
+        <nav>
+          <ul>
+            <li><a href="index.html">Главная</a></li>
+            <li><a href="catalog.html">Каталог</a></li>
+            <li><a href="about.html">О нас</a></li>
+            <li><a href="contacts.html">Контакты</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main class="container section">
+      <h1>Контакты</h1>
+      <p>Email: <a href="mailto:luna.jwlr@gmail.com">luna.jwlr@gmail.com</a></p>
+      <p>Телефон: <a href="tel:+375293998800">+375 (29) 399-88-00</a></p>
+      <p>
+        Instagram:
+        <a href="https://instagram.com/luna.jwlr.by">@luna.jwlr.by</a>
+      </p>
+      <h3>Напишите нам</h3>
+      <form
+        class="contact-form"
+        onsubmit="event.preventDefault(); alert('Спасибо! Мы получили ваше сообщение.'); this.reset();"
+      >
+        <label>Имя:<input class="contacts-input" type="text" name="name" required /></label
+        ><label>Email:<input class="contacts-input" type="email" name="email" required /></label
+        ><label>Сообщение:<textarea class="contacts-input contacts-area" name="message" required></textarea></label
+        ><label
+          ><input type="checkbox" required /> Согласен(на) на обработку
+          персональных данных</label
+        ><button class="button" type="submit">Отправить</button>
+      </form>
+    </main>
+    <footer class="footer container">
+      <div>
+        © 2024 Luna Jewelry — Email: luna.jwlr@gmail.com · +375 (29) 399-88-00 ·
+        Instagram: @luna.jwlr.by
+      </div>
+    </footer>
+    <script src="js/main.js"></script>
+  </body>
+</html>
